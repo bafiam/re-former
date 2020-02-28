@@ -1,1 +1,10 @@
-<h1>new page</h1>
+<%provide(:title, "New User")%>
+<form action="/users" method="post" accept-charset="UTF-8">
+  <label for="username">Username</label>
+  <input type="text" name="Username">
+  <label for="email">Email</label>
+  <input type="email" name="email">
+  <label for="password">Password</label>
+  <input type="password" name="password">
+  <input type="submit" value="Submit">
+</form>
