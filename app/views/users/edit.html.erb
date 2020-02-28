@@ -1,0 +1,16 @@
+<h1>edit_user</h1>
+
+
+<%= form_for @user, url: {action: "update"} do |f| %>
+  <%= render 'shared/error_messages' %>
+  
+  <%= f.label :username %>
+  <%= f.text_field :username,value: "User"%>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, placeholder: "example@example.com" %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, value: "123456789" %>
+  <%= f.submit "Submit" %>
+<% end %>
