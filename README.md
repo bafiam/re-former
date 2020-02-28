@@ -36,6 +36,24 @@ Now, you are ready to install the _Gemfile_ dependencies. Run the following comm
 
 2. Run `bundle` to get all the gems.
 
+## ⭐️ Running the code
+
+Inside The project Repository run the following command:
+
+```
+    rails server
+```
+
+Then, Check **_http://localhost:3000/_**  
+To Create a new user, check **_http://localhost:3000/users/new_**  
+To Edit your user, check **_http://localhost:3000/users/(user_id*)/edit_**  
+  
+_(*): to know the id of your user run:_  
+```
+   $ rails c
+   $ User.all(or $ User.find_by(params[:username]) / if you know the username )
+```
+
 ## Author
 
 👤 **Bafiam Steve**
